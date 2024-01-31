@@ -1,0 +1,60 @@
+#caixa1 {
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#caixa2 {
+    width: 400px;
+    height: 300px;
+    background: #b9c941;
+}
+
+#caixa-degrade {
+    width: 300px;
+    height: 300px;
+    background: url("../imagens/camera.png");
+}
+
+
+#caixa-degrade h1 {
+    background: rgba(255,255,255,0.5);
+}
+
+#caixa-degrade p{
+    background: linear-gradient(to left,red,green, yellow);
+}
+
+#caixa-sombra {
+    width: 300px;
+    height: 300px;
+    padding: 8px;
+    margin: 20px;
+    background: #009670;
+    box-shadow: 40px 40px 2px 20px rgba(0,0,0,0.6); /* o quarto valor 20px representa o tamanho da sombra */
+}
+
+#caixa-sombra h1 {
+    color: white;
+    /*text-shadow: 2px 2px black;*/
+    text-shadow: 2px 2px 5px rgba(255,255,255,0.5);/* 5px representa bluer*/
+}
+
+@keyframes animacao-caixa {
+    from {
+        background: red;
+    }
+    to {
+        background: yellow;
+    }
+}
+
+#caixa-animacoes {
+    width: 300px;
+    height: 300px;
+    background: red;
+    animation-name: animacao-caixa;
+    animation-duration: 5s;
+}
